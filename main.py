@@ -1,7 +1,6 @@
 tasks = {}
 def add_task(task, description, due_date):
     tasks[len(tasks) + 1] = {'task': task, 'description': description, 'due_date': due_date, 'completed': False}
-
 def mark_task_completed(task_id):
     if task_id in tasks:
         tasks[task_id]['completed'] = True
